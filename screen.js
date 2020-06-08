@@ -16,3 +16,4 @@ console.log('脚本生效了234243')
                 var str2 = 'innerHeight='+innerHeight + 'innerWidth='+innerWidth+'outerHeight='+outerHeight+'outerWidth='+outerWidth;
                 alert(str1)
                 alert(str2)
+alert(window.orientation)
