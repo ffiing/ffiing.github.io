@@ -7,13 +7,13 @@
 </head>
 <body style="border: 1px solid red;height: 100vh;margin: 0;padding: 0;box-sizing: border-box">
 <div>
-    v3
+    v6
     <p id="p">
 
     </p>
 
 </div>
-    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 <script>
     var p = document.getElementById("p");
 
@@ -58,6 +58,10 @@
     // 屏幕可用工作区宽度：
     v = window.screen.availWidth
     text+= 'window.screen.availWidth ' + v + ' <br>'
+
+
+    v =  document.documentElement.clientHeight
+    text+= ' document.documentElement.clientHeight ' + v + ' <br>'
 
     p.innerHTML = text
 
