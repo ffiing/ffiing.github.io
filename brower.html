@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <p id="p">
+
+    </p>
+
+</div>
+<script>
+    var p = document.getElementById("p");
+
+    var text = "" ;
+
+    // 网页可见区域宽：
+    var v = document.body.clientHeight;
+    text+= 'document.body.clientHeight:' + v + ' <br>'
+    // 网页可见区域宽： (包括边线的宽)
+    v =document.body.offsetWidth
+    text+= 'document.body.offsetWidth ' + v + ' <br>'
+    // 网页可见区域高： (包括边线的高)
+    v =document.body.offsetHeight
+    text+= 'document.body.offsetHeight ' + v + ' <br>'
+    // 网页正文全文宽：
+    v = document.body.scrollWidth
+    text+= 'document.body.scrollWidth ' + v + ' <br>'
+    // 网页正文全文高：
+    v = document.body.scrollHeight
+    text+= 'document.body.scrollHeight ' + v + ' <br>'
+    // 网页被卷去的高：
+    v = document.body.scrollTop
+    text+= 'document.body.scrollTop ' + v + ' <br>'
+    // 网页被卷去的左：
+    v = document.body.scrollLeft
+    text+= 'document.body.scrollLeft ' + v + ' <br>'
+    // 网页正文部分上：
+    v = window.screenTop
+    text+= 'window.screenTop ' + v + ' <br>'
+    // 网页正文部分左：
+    v = window.screenLeft
+    text+= 'window.screenLeft ' + v + ' <br>'
+    // 屏幕分辨率的高：
+    v = window.screen.height
+    text+= 'window.screen.height ' + v + ' <br>'
+    // 屏幕分辨率的宽：
+    v = window.screen.width
+    text+= 'window.screen.width ' + v + ' <br>'
+    // 屏幕可用工作区高度：
+    v = window.screen.availHeight
+    text+= 'window.screen.availHeight ' + v + ' <br>'
+    // 屏幕可用工作区宽度：
+    v = window.screen.availWidth
+    text+= 'window.screen.availWidth ' + v + ' <br>'
+
+    p.innerHTML = text
+
+
+    try {
+
+    }catch (e) {
+
+    }
+
+</script>
+</body>
+</html>
