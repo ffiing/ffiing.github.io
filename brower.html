@@ -7,11 +7,11 @@
 </head>
 <body style="border: 1px solid red;height: 100vh;margin: 0;padding: 0;box-sizing: border-box">
 <div>
-    1450
+    1251
     <p id="p">
 
     </p>
-
+    <button onclick="window.history.back()">window.history.back()</button>
 </div>
 <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 <script>
@@ -70,7 +70,9 @@
 
         text += ' <hr>'
         text += ' userAgent ' + window.navigator.userAgent + ' <br>'
-
+        text += ' <hr>'
+        text += 'window.history.length=' +window.history.length + ' <br>'
+        
         p.innerHTML = text
 
 
