@@ -13,6 +13,7 @@
     </p>
     <button onclick="window.history.reload()">window.history.reload()</button>
     <button onclick="window.history.back()">window.history.back()</button>
+    <button onclick="zhendong()">navigator.vibrate()</button>
 </div>
 <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 <script>
@@ -73,6 +74,11 @@
         text += ' userAgent ' + window.navigator.userAgent + ' <br>'
         text += ' <hr>'
         text += 'window.history.length=' +window.history.length + ' <br>'
+    
+        
+        
+        
+        
         
         p.innerHTML = text
 
@@ -80,7 +86,13 @@
     } catch (e) {
         p.innerHTML = "Error: " + e.message
     }
-
+    //     // 震动  https://blog.csdn.net/qq_40259641/article/details/83865335
+        
+    function zhendong(){
+        navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate
+        navigator.vibrate(1000)
+    }
+    
 </script>
 </body>
 </html>
