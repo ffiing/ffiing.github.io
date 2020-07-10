@@ -14,6 +14,11 @@
     <button onclick="window.history.reload()">window.history.reload()重载</button>
     <button onclick="window.history.back()">window.history.back()返回</button>
     <button onclick="zhendong()">navigator.vibrate()震动</button>
+    <button onmousedown="bofang()">声音</button>
+    <audio controls id="audio" style="display: none">
+        <source src="./kuaimen.mp3" type="audio/mpeg">
+        您的浏览器不支持 audio 元素。
+    </audio>
 </div>
 <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 <script>
@@ -93,6 +98,9 @@
         navigator.vibrate(150)
     }
     
+    function bofang() {
+        document.getElementById('audio').play();
+    }
 </script>
 </body>
 </html>
